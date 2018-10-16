@@ -521,9 +521,9 @@ class COCOeval:
                     s = s[t]
                 if categoryId is not None:
                     category_index = [i for i, i_catId in enumerate(p.catIds) if i_catId == categoryId]
-                    s = s[:,category_index,aind,mind]
+                    s = s[:,:,category_index,aind,mind]
                 else:
-                    s = s[:,:, aind, mind]
+                    s = s[:,:,:, aind, mind]
             else:
                 # dimension of recall: [TxKxAxM]
                 s = self.eval['recall']
