@@ -1,6 +1,6 @@
 Implemetation of "include_metrics_per_category" in "eval_config" of tensorflow object detection api.Three code additions are listed below:
-1.addtion in "cocoapi/PythonAPI/pycocotools/cocoeval.py":from line 499 to line 650
-2.addtion in "models/research/object_detetcion/metrics/coco_tools.py":from line 239 to line 240
+1.addtion in "tensorflow/models/research/pycocotools/cocoeval.py":from line 499 to line 648
+2.addtion in "tensorflow/models/research/object_detetcion/metrics/coco_tools.py":from line 240 to line 244
 3.add
 {
   metrics_set: "coco_detection_metrics" 

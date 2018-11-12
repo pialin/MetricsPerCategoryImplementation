@@ -496,6 +496,7 @@ class COCOeval:
     def __str__(self):
         self.summarize()
 
+    # add for per category metric from here 
     def summarize_per_category(self):
         '''
         Compute and display summary metrics for evaluation results *per category*.
@@ -644,9 +645,7 @@ class COCOeval:
 
     def __str__(self):
         self.summarize_per_category()
-
-
-
+    # add for metric per category end here
 
 class Params:
     '''
